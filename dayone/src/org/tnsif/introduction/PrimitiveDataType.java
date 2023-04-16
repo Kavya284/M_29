@@ -7,8 +7,10 @@ public class PrimitiveDataType {
 		byte bytemax=127;
 		short shortmax= 32767;
 		long var2=6790005668L;
+		int a=10;
 		char v1='s';
 		boolean flag=true;
+		System.out.println(a);
 		System.out.println(bytemax);
 		System.out.println(shortmax);
 		System.out.println(var2);
