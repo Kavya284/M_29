@@ -1,18 +1,26 @@
-//program to demonstrate on Multilevel Inheritance
-//driver class
 package org.tnsif.multilevel;
-
-public class MultilevelInheritanceExecutor {
-
-	public static void main(String[] args) {
-		City c = new City();
-		c.setCityName("Pune");
-		c.setArea("Viman Nagar");
-		c.setStateName("Maharashtra");
-		c.setLanguage("Marathi");
-		c.setCountryName("India");
-		c.setCountryCapital("Delhi");
-		System.out.println(c);
+//parent class 2 and child1
+public class State extends Country{
+	//private data members
+	private String stateName;
+	private String language;
+	//getters and setters
+	public String getStateName() {
+		return stateName;
 	}
-
+	public void setStateName(String stateName) {
+		this.stateName = stateName;
+	}
+	public String getLanguage() {
+		return language;
+	}
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+	@Override
+	public String toString() {
+		return "State [stateName=" + stateName + ", language=" + language + ", getCountryName()=" + getCountryName()
+				+ ", getCountryCapital()=" + getCountryCapital() + "]";
+	}
+	
 }
